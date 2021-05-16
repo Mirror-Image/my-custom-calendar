@@ -1,0 +1,52 @@
+.calendar header {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 8px;
+}
+
+.calendar header button
+.calendar header select {
+	margin: 0 4px;
+}
+
+.calendar table {
+	margin: auto;
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.calendar th {
+	height: 36px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.calendar .day {
+	padding: 4px 8px;
+	vertical-align: middle;
+	text-align: center;
+	border: 2px solid transparent;
+}
+
+.calendar .day:hover {
+	cursor: pointer;
+	background-color: #eaeaea;
+}
+
+.calendar .day.selected {
+	border: 2px solid dodgerblue;
+}
+
+.calendar .day.today {
+	color: white;
+	background-color: dodgerblue;
+}
+
+.calendar .day.today:hover {
+	background-color: #0081ff;
+}
+
+.calendar .day.today.selected {
+	border: 2px solid lightgray;
+}
